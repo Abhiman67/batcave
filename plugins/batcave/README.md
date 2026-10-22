@@ -18,10 +18,10 @@ batcave has no server or telemetry. Anything its skills ask your agent to read, 
 
 ## Links
 
-- [Skills, slash commands, runtime setup, and model configuration](https://github.com/Abhiman67/batcave-claude/blob/main/docs/reference.md)
-- [Issues and support](https://github.com/Abhiman67/batcave-claude/issues)
-- [Security policy](https://github.com/Abhiman67/batcave-claude/blob/main/SECURITY.md)
+- [Skills, slash commands, runtime setup, and model configuration](https://github.com/Abhiman67/batcave/blob/main/docs/reference.md)
+- [Issues and support](https://github.com/Abhiman67/batcave/issues)
+- [Security policy](https://github.com/Abhiman67/batcave/blob/main/SECURITY.md)
 
 ## License
 
-MIT for this port and its additions, © 2026 Abhishek Chhandak. Original batcave © 2026 Lauren Tan; imported cursor-team-kit skills © 2026 Cursor. See [NOTICE.md](https://github.com/Abhiman67/batcave-claude/blob/main/NOTICE.md).
+MIT for this port and its additions, © 2026 Abhishek Chhandak. Original batcave © 2026 Lauren Tan; imported cursor-team-kit skills © 2026 Cursor. See [NOTICE.md](https://github.com/Abhiman67/batcave/blob/main/NOTICE.md).

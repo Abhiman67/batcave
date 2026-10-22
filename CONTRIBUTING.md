@@ -94,7 +94,7 @@ uvx zizmor@1.29.0 --persona pedantic --min-severity low --collect all -- .
 
 ## Things that will fail CI
 
-- **A `plugins/batcave/commands/` directory.** Claude Code renders commands and user-invocable skills in the same slash menu, so a trampoline paired with its skill duplicates every `/batcave:<name>` row ([#22](https://github.com/Abhiman67/batcave-claude/issues/22)). Codex stubs live in `plugins/batcave/.codex-plugin/prompts/`. An upstream sync will try to reintroduce `commands/`; move any new stubs across.
+- **A `plugins/batcave/commands/` directory.** Claude Code renders commands and user-invocable skills in the same slash menu, so a trampoline paired with its skill duplicates every `/batcave:<name>` row ([#22](https://github.com/Abhiman67/batcave/issues/22)). Codex stubs live in `plugins/batcave/.codex-plugin/prompts/`. An upstream sync will try to reintroduce `commands/`; move any new stubs across.
 - **`disable-model-invocation` in a skill's frontmatter.** On a skill it makes the Skill tool refuse the invocation outright, which breaks the SessionStart mandate. The `principle-*` leaves use `user-invocable: false` instead.
 - **Stale generated output.** The `Generated files current` job runs `bun tools/generate.mjs --check`, which fails naming each generated file to write or orphan to remove. Editing `VERSION` without regenerating, hand-editing a manifest's `version` field, or bumping without a matching `CHANGES.md` heading all land here. The same run validates `hooks/hooks.json`, the Codex hooks file `.codex-plugin/plugin.json` names, and the Copilot hooks file `.github/plugin/plugin.json` names: every `${CLAUDE_PLUGIN_ROOT}` path a command names, or `${COPILOT_PLUGIN_ROOT}` path in the Copilot file, must exist in the plugin.
 - **An unresolved sync conflict.** `bun tools/generate.mjs` fails on any line under `plugins/batcave` that starts with seven `<`, `|`, `=`, or `>` followed by a space or the line end, and names the file and line. A sync writes the `<`, `=`, and `>` markers for every text conflict. A `|` line comes from a merge run by hand under a `diff3` conflict style.
@@ -124,6 +124,6 @@ So: any PR that changes skill behavior either bumps the version itself or is fol
 
 ## Reporting bugs
 
-Include the batcave version, the Claude Code (or Codex, Pi, or GitHub Copilot) version, and the reproduction steps. [#22](https://github.com/Abhiman67/batcave-claude/issues/22) is the model to copy: it named versions, gave numbered steps, and included the experiment that isolated the cause.
+Include the batcave version, the Claude Code (or Codex, Pi, or GitHub Copilot) version, and the reproduction steps. [#22](https://github.com/Abhiman67/batcave/issues/22) is the model to copy: it named versions, gave numbered steps, and included the experiment that isolated the cause.
 
 Reproduce the bug on the latest release before you file it, because only that release receives fixes. The [bug report form](.github/ISSUE_TEMPLATE/bug_report.yml) asks for each of these fields. An issue filed through `gh` or the API skips the form, so give the same fields in the same order.

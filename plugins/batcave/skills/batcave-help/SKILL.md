@@ -9,7 +9,7 @@ Answer the user's question about batcave, hand them a prompt they can send, and 
 
 A message that asks for work, such as "use batcave to fix this bug", is not a help question. Read [`batcave-mode`](../batcave-mode/SKILL.md) and do the work under it.
 
-This file maps questions to the installed skills, playbooks, and platform mappings that own the answers. Read the matching source before answering. Its instructions take precedence over this map and any upstream guide, which describes Cursor and may differ from this port. The local links point into the installed plugin, so give the user the file's public copy: `https://github.com/Abhiman67/batcave-claude/blob/main/plugins/batcave/` followed by its path relative to the plugin root.
+This file maps questions to the installed skills, playbooks, and platform mappings that own the answers. Read the matching source before answering. Its instructions take precedence over this map and any upstream guide, which describes Cursor and may differ from this port. The local links point into the installed plugin, so give the user the file's public copy: `https://github.com/Abhiman67/batcave/blob/main/plugins/batcave/` followed by its path relative to the plugin root.
 
 ## Find out what they need
 
@@ -34,11 +34,11 @@ When the model sheet is missing and it matters, ask whether the user wants to pi
 
 ## Get set up
 
-1. Identify the user's runtime and whether they want a native plugin/package or skills-only installation. Read its section in the [README](https://github.com/Abhiman67/batcave-claude/blob/main/README.md#install) or [shared installation reference](https://github.com/Abhiman67/batcave-claude/blob/main/docs/reference.md#shared-skills-installation), then give the matching install command.
+1. Identify the user's runtime and whether they want a native plugin/package or skills-only installation. Read its section in the [README](https://github.com/Abhiman67/batcave/blob/main/README.md#install) or [shared installation reference](https://github.com/Abhiman67/batcave/blob/main/docs/reference.md#shared-skills-installation), then give the matching install command.
 2. Read [`/setup-batcave`](../setup-batcave/SKILL.md), including its Other runtimes table, before explaining model choices, effort, sheet loading, or automatic routing. For a bundled routing hook or extension, use its persistent `session hook: off` setting in the current runtime's sheet to turn routing off. After the model sheet, it offers once each to generate a verification skill and a formal verification skill for the project, unless the project already has one.
-3. Offer a first task prompt with a goal and a check that can pass or fail, per [`references/prompting.md`](references/prompting.md). Use the current runtime's invocation syntax from the [slash-command reference](https://github.com/Abhiman67/batcave-claude/blob/main/docs/reference.md#slash-commands).
+3. Offer a first task prompt with a goal and a check that can pass or fail, per [`references/prompting.md`](references/prompting.md). Use the current runtime's invocation syntax from the [slash-command reference](https://github.com/Abhiman67/batcave/blob/main/docs/reference.md#slash-commands).
 
-Before giving runtime-specific instructions or adapting a recipe, read the [Codex mapping](../batcave-mode/references/codex-tools.md) or [Pi mapping](../batcave-mode/references/pi-tools.md) when applicable. Their routing sections cover hook trust, extension loading, and skills-only installs. For other runtimes, use the [runtime support reference](https://github.com/Abhiman67/batcave-claude/blob/main/docs/reference.md#runtime-support).
+Before giving runtime-specific instructions or adapting a recipe, read the [Codex mapping](../batcave-mode/references/codex-tools.md) or [Pi mapping](../batcave-mode/references/pi-tools.md) when applicable. Their routing sections cover hook trust, extension loading, and skills-only installs. For other runtimes, use the [runtime support reference](https://github.com/Abhiman67/batcave/blob/main/docs/reference.md#runtime-support).
 
 If cost is the worry, say where the tokens go and how to spend less. batcave spends extra tokens on subagents and review panels. Rerun `/setup-batcave` and pick a lower effort or cheaper models. A role set to `auto` or `inherit-parent` runs on the chat's model, which costs less when the chat runs on a cheaper model. A shorter panel list runs fewer subagents, one for each entry. Save `/batcave-mode` for work that needs rigor.
 

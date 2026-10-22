@@ -2,12 +2,12 @@
   "substitutions": [
     {
       "pattern": "`https://github.com/cursor/plugins/blob/main/batcave/` followed by its path",
-      "replacement": "`https://github.com/Abhiman67/batcave-claude/blob/main/plugins/batcave/` followed by its path",
+      "replacement": "`https://github.com/Abhiman67/batcave/blob/main/plugins/batcave/` followed by its path",
       "rationale": "the public copy of a port skill file lives in this repository under plugins/batcave"
     },
     {
       "pattern": "[README](../../README.md)",
-      "replacement": "[README](https://github.com/Abhiman67/batcave-claude/blob/main/README.md)",
+      "replacement": "[README](https://github.com/Abhiman67/batcave/blob/main/README.md)",
       "rationale": "upstream's README is excluded and the port's README sits at the repository root, outside the skills tree"
     },
     {

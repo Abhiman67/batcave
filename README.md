@@ -15,7 +15,7 @@ For concurrency bugs and invariants that tests cannot reach, `/create-formal-ver
 Run in Claude Code:
 
 ```text
-/plugin marketplace add Abhiman67/batcave-claude
+/plugin marketplace add Abhiman67/batcave
 /plugin install batcave@batcave-claude
 ```
 
@@ -28,7 +28,7 @@ Run in Claude Code:
 Run in your terminal:
 
 ```shell
-codex plugin marketplace add Abhiman67/batcave-claude
+codex plugin marketplace add Abhiman67/batcave
 codex plugin add batcave@batcave-claude
 ```
 
@@ -40,7 +40,7 @@ codex plugin add batcave@batcave-claude
 Run in your terminal:
 
 ```shell
-pi install git:github.com/Abhiman67/batcave-claude
+pi install git:github.com/Abhiman67/batcave
 ```
 
 The package loads the skills and the batcave Pi extension, which adds the subagent, question, and wake-up tools the skills use, plus `/loop` and the routing instruction. Invoke a skill with `/skill:<name>`.
@@ -53,7 +53,7 @@ The package loads the skills and the batcave Pi extension, which adds the subage
 Run in your terminal:
 
 ```shell
-copilot plugin marketplace add Abhiman67/batcave-claude
+copilot plugin marketplace add Abhiman67/batcave
 copilot plugin install batcave@batcave-claude
 ```
 
@@ -70,8 +70,8 @@ The Copilot build is tested on Copilot CLI 1.0.87 through 1.0.92. On those versi
 OpenCode (the CLI and the desktop app), Gemini CLI, Prime Agent, and skills-only Codex installs read skills from `~/.agents/skills/`. Run in your terminal:
 
 ```shell
-git clone https://github.com/Abhiman67/batcave-claude
-cd batcave-claude
+git clone https://github.com/Abhiman67/batcave
+cd batcave
 mkdir -p ~/.agents/skills
 for s in plugins/batcave/skills/*/; do
   target=~/.agents/skills/"$(basename "$s")"

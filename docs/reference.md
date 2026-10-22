@@ -99,7 +99,7 @@ To update, run `git pull` in the clone that the links point to, then run the ins
 To install without keeping a local clone:
 
 ```shell
-npx skills add https://github.com/Abhiman67/batcave-claude/tree/main/plugins/batcave/skills --skill "*" --agent "*" --yes
+npx skills add https://github.com/Abhiman67/batcave/tree/main/plugins/batcave/skills --skill "*" --agent "*" --yes
 ```
 
 The [CI installation check](../.github/workflows/ci.yml) uses the skills CLI to copy the checkout's skill tree and compare the installed files with their sources.
@@ -135,7 +135,7 @@ Each shortcut invokes its skill. The commands skip existing files and links. Rem
 
 ### Pi
 
-The repository root is a [Pi package](https://pi.dev/packages): its [`package.json`](../package.json) lists the shared skills directory and the [batcave Pi extension](../plugins/batcave/pi/index.ts). Install it with `pi install git:github.com/Abhiman67/batcave-claude`, or `pi install <clone path>` for a local checkout.
+The repository root is a [Pi package](https://pi.dev/packages): its [`package.json`](../package.json) lists the shared skills directory and the [batcave Pi extension](../plugins/batcave/pi/index.ts). Install it with `pi install git:github.com/Abhiman67/batcave`, or `pi install <clone path>` for a local checkout.
 
 The extension supplies what Pi lacks natively, under the Claude Code names the skills use:
 

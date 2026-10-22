@@ -1,0 +1,47 @@
+{
+  "name": "batcave",
+  "displayName": "batcave (Claude Code port)",
+  "version": "0.9.94",
+  "description": "If you want to go fast, go deep first. BatCave helps you write less, but higher quality code. Rigorous agent workflows you can parallelize with confidence.",
+  "author": {
+    "name": "Abhishek Chhandak",
+    "url": "https://github.com/Abhiman67"
+  },
+  "homepage": "https://github.com/Abhiman67/batcave-claude",
+  "repository": "https://github.com/Abhiman67/batcave-claude",
+  "license": "MIT",
+  "keywords": [
+    "batcave",
+    "batcave-mode",
+    "workflow",
+    "principles",
+    "agent-style",
+    "subagents",
+    "unslop",
+    "claude-code",
+    "skills",
+    "tdd",
+    "code-review",
+    "parallel-agents",
+    "codex",
+    "opencode",
+    "gemini-cli",
+    "prime-agent"
+  ],
+  "agents": [
+    "./agents/batcave-agent.md",
+    "./agents/comment-sicko.md",
+    "./agents/thermo-nuclear-code-quality-review-subagent.md",
+    "./agents/thermo-nuclear-review-subagent.md",
+    "./effort-agents/batcave-agent-high.md",
+    "./effort-agents/batcave-agent-low.md",
+    "./effort-agents/batcave-agent-max.md",
+    "./effort-agents/batcave-agent-medium.md",
+    "./effort-agents/batcave-agent-xhigh.md",
+    "./effort-agents/effort-high.md",
+    "./effort-agents/effort-low.md",
+    "./effort-agents/effort-max.md",
+    "./effort-agents/effort-medium.md",
+    "./effort-agents/effort-xhigh.md"
+  ]
+}

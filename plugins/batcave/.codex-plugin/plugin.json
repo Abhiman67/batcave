@@ -1,0 +1,52 @@
+{
+  "name": "batcave",
+  "version": "0.9.94",
+  "description": "If you want to go fast, go deep first. BatCave helps you write less, but higher quality code. Rigorous agent workflows you can parallelize with confidence. Skills are shared, and Codex tool names resolve through the batcave-mode mapping.",
+  "author": {
+    "name": "Abhishek Chhandak",
+    "url": "https://github.com/Abhiman67"
+  },
+  "homepage": "https://github.com/Abhiman67/batcave-claude",
+  "repository": "https://github.com/Abhiman67/batcave-claude",
+  "license": "MIT",
+  "keywords": [
+    "batcave",
+    "batcave-mode",
+    "workflow",
+    "principles",
+    "agent-style",
+    "subagents",
+    "unslop",
+    "claude-code",
+    "skills",
+    "tdd",
+    "code-review",
+    "parallel-agents",
+    "codex",
+    "opencode",
+    "gemini-cli",
+    "prime-agent"
+  ],
+  "skills": "./skills/",
+  "hooks": "./hooks/codex-hooks.json",
+  "interface": {
+    "displayName": "batcave",
+    "shortDescription": "Rigorous, parallelizable agent workflows: go deep first, write less, verify everything",
+    "longDescription": "batcave guides agent work through batcave-mode's principles, parallel design exploration (architect/arena), adversarial multi-model review (interrogate), root-cause debugging, prose deslopping, and verified delivery. Skills are shared with the Claude Code build; on Codex, tool names resolve via the codex-tools mapping.",
+    "developerName": "Abhishek Chhandak (BatCave)",
+    "category": "Developer Tools",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "defaultPrompt": [
+      "Work on this in batcave-mode.",
+      "Interrogate this diff with multiple models."
+    ],
+    "websiteURL": "https://github.com/Abhiman67/batcave-claude",
+    "brandColor": "#7C3AED",
+    "composerIcon": "./assets/batcave-icon.png",
+    "logo": "./assets/batcave-icon.png"
+  }
+}

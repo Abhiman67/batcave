@@ -1,0 +1,15 @@
+{
+  "name": "batcave",
+  "displayName": "batcave (GitHub Copilot port)",
+  "version": "0.9.94",
+  "description": "If you want to go fast, go deep first. BatCave helps you write less, but higher quality code through rigorous agent workflows you can parallelize with confidence.",
+  "author": {
+    "name": "Abhishek Chhandak",
+    "url": "https://github.com/Abhiman67"
+  },
+  "homepage": "https://github.com/Abhiman67/batcave-claude",
+  "repository": "https://github.com/Abhiman67/batcave-claude",
+  "license": "MIT",
+  "keywords": ["batcave", "batcave-mode", "workflow", "skills", "subagents", "github-copilot"],
+  "hooks": "hooks/copilot-hooks.json"
+}

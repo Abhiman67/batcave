@@ -1,0 +1,16 @@
+{
+  "name": "batcave-claude",
+  "owner": {
+    "name": "Abhishek Chhandak",
+    "url": "https://github.com/Abhiman67"
+  },
+  "description": "BatCave provides portable, rigorous agent workflows for Claude Code and other coding runtimes.",
+  "plugins": [
+    {
+      "name": "batcave",
+      "source": "./plugins/batcave",
+      "description": "If you want to go fast, go deep first. BatCave helps you write less, but higher quality code. Rigorous agent workflows you can parallelize with confidence.",
+      "version": "0.9.94"
+    }
+  ]
+}
